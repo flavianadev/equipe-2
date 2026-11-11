@@ -409,28 +409,75 @@ footer ul{list-style:none;display:grid;gap:8px;font-size:.95rem}
     <p class="big">"Como podemos criar uma tecnologia para ajudar a vida dos animais?"</p>
     <div class="proj">
       <div class="card">
-        <h3>PROJETO: AVE PROTEGIDA – MONITORAMENTO INTELIGENTE</h3>
-        <p>Um sistema educativo de monitoramento de aves que usa uma câmera, sensores e tecnologia GPS.</p>
+        <h3>PROJETO: CASINHA COM CÂMERA</h3>
+        <p>Uma casinha de pássaro com câmera para observar as aves sem incomodá-las. A câmera fica do lado de fora, apontada para o poleiro, para registrar quem visita a casinha.</p>
         <ul>
-          <li>Câmera para observar aves em ambientes naturais.</li>
-          <li>Sensor para registrar a presença de animais.</li>
-          <li>Sistema de identificação de espécies.</li>
-          <li>Mapa com os locais onde as aves foram observadas.</li>
-          <li>Painel educativo com informações sobre cada espécie.</li>
+          <li>Casinha de papelão, com entrada de 3,2 cm para pássaros pequenos.</li>
+          <li>Poleiro na frente da entrada, para a ave pousar.</li>
+          <li>Câmera fixa do lado de fora, apontada para o poleiro.</li>
+          <li>Registro das visitas, com dia e horário.</li>
+          <li>Painel educativo com informações sobre as aves que visitam a casinha.</li>
         </ul>
-        <p style="margin-top:14px;font-size:.95rem">Ideia criada pela Equipe 2, inspirada nas tecnologias usadas na conservação da natureza.</p>
+        <p style="margin-top:14px;font-size:.95rem">Ideia criada pela Equipe 2, inspirada nas tecnologias usadas para observar aves na natureza.</p>
       </div>
       <div class="card" style="text-align:center">
-        <svg viewBox="0 0 260 240" width="100%" role="img" aria-label="Ilustração do equipamento Ave Protegida">
-          <rect x="70" y="30" width="120" height="90" rx="14" fill="#1B3A5C"/>
-          <rect x="82" y="42" width="96" height="66" rx="8" fill="#7CCBEA"/>
-          <circle cx="130" cy="75" r="20" fill="#1B3A5C"/><circle cx="130" cy="75" r="9" fill="#FFC93C"/>
-          <rect x="120" y="120" width="20" height="30" fill="#1B3A5C"/>
-          <rect x="60" y="150" width="140" height="22" rx="8" fill="#F26B1D" stroke="#1B3A5C" stroke-width="3"/>
-          <circle cx="200" cy="50" r="12" fill="#3BA55C"/><text x="200" y="55" text-anchor="middle" font-size="12" fill="#fff" font-weight="700">GPS</text>
-          <rect x="30" y="180" width="200" height="40" rx="10" fill="#3BA55C"/>
-          <text x="130" y="206" text-anchor="middle" font-size="16" fill="#fff" font-weight="800" font-family="Baloo 2">Ave Protegida</text>
-        </svg>
+        <svg width="100%" role="img" aria-label="Protótipo da casinha com câmera apontando para o poleiro" viewBox="0 0 800 600" font-family="Nunito, Arial, Helvetica, sans-serif">
+  <rect width="800" height="600" fill="#E6F6FC"/>
+
+  <!-- Sombra no chão -->
+  <ellipse cx="400" cy="512" rx="210" ry="18" fill="#1B3A5C" opacity=".12"/>
+
+  <!-- Corpo da casinha -->
+  <rect x="265" y="300" width="270" height="200" rx="6" fill="#FFC93C" stroke="#1B3A5C" stroke-width="4"/>
+
+  <!-- Telhado de duas águas: triângulo /\ simétrico -->
+  <polygon points="222,306 400,124 578,306 560,306 400,146 240,306" fill="#F26B1D" stroke="#1B3A5C" stroke-width="4" stroke-linejoin="round"/>
+  <polygon points="240,306 400,146 560,306" fill="#F26B1D" opacity="0"/>
+
+  <!-- Entrada -->
+  <circle cx="400" cy="380" r="34" fill="#F26B1D"/>
+  <circle cx="400" cy="380" r="26" fill="#1B3A5C"/>
+
+  <!-- Câmera ao lado da entrada, lente apontando para o poleiro -->
+  <rect x="446" y="326" width="58" height="38" rx="5" fill="#C8A46B" stroke="#1B3A5C" stroke-width="3"/>
+  <rect x="454" y="333" width="9" height="7" rx="2" fill="#E5484D"/>
+  <circle cx="475" cy="352" r="11" fill="#1B3A5C" stroke="#C8A46B" stroke-width="2"/>
+  <circle cx="475" cy="352" r="4.5" fill="#7CCBEA"/>
+  <rect x="470" y="364" width="10" height="8" fill="#8a5a3b"/>
+  <!-- Linha de mira até o poleiro -->
+  <line x1="475" y1="376" x2="475" y2="410" stroke="#E5484D" stroke-width="3" stroke-dasharray="7 5"/>
+  <polygon points="475,414 469,404 481,404" fill="#E5484D"/>
+
+  <!-- Poleiro na frente da entrada -->
+  <rect x="360" y="418" width="210" height="14" rx="7" fill="#C8A46B" stroke="#1B3A5C" stroke-width="3"/>
+
+  <!-- Pássaro pousado no poleiro -->
+  <ellipse cx="530" cy="400" rx="22" ry="14" fill="#2E8FD6" stroke="#1B3A5C" stroke-width="3"/>
+  <ellipse cx="520" cy="409" rx="11" ry="7" fill="#F26B1D"/>
+  <circle cx="548" cy="388" r="10" fill="#2E8FD6" stroke="#1B3A5C" stroke-width="3"/>
+  <polygon points="557,388 568,392 557,396" fill="#F26B1D"/>
+  <circle cx="551" cy="385" r="2.5" fill="#1B3A5C"/>
+  <line x1="524" y1="414" x2="524" y2="418" stroke="#1B3A5C" stroke-width="3"/>
+  <line x1="536" y1="414" x2="536" y2="418" stroke="#1B3A5C" stroke-width="3"/>
+
+  <!-- Legendas -->
+  <g font-size="18" font-weight="800" fill="#1B3A5C">
+    <text x="30" y="200">1. Telhado de duas águas</text>
+    <line x1="250" y1="208" x2="320" y2="240" stroke="#1B3A5C" stroke-width="2" stroke-dasharray="5 4"/>
+
+    <text x="30" y="390">2. Entrada</text>
+    <line x1="130" y1="382" x2="364" y2="382" stroke="#1B3A5C" stroke-width="2" stroke-dasharray="5 4"/>
+
+    <text x="600" y="330">3. Câmera</text>
+    <line x1="600" y1="324" x2="506" y2="340" stroke="#1B3A5C" stroke-width="2" stroke-dasharray="5 4"/>
+
+    <text x="600" y="470">4. Poleiro</text>
+    <line x1="600" y1="462" x2="566" y2="424" stroke="#1B3A5C" stroke-width="2" stroke-dasharray="5 4"/>
+  </g>
+
+  <rect x="40" y="548" width="720" height="34" rx="12" fill="#FFFFFF" stroke="#1B3A5C" stroke-width="2"/>
+  <text x="400" y="571" text-anchor="middle" font-size="15" font-weight="700" fill="#1B3A5C">Vista de frente: entrada e poleiro juntos, câmera ao lado da entrada apontando para o poleiro</text>
+</svg>
       </div>
     </div>
   </div>
